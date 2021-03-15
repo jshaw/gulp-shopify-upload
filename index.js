@@ -176,7 +176,7 @@ shopify.upload = function (filepath, file, host, base, themeid) {
 function gulpShopifyUpload(apiKey, password, host, themeid, options) {
 
   // queue files provided in the stream for deployment
-  var apiBurstBucketSize = 40,
+  var apiBurstBucketSize = 1,
     uploadedFileCount = 0,
     stream;
 
